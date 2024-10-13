@@ -2,7 +2,7 @@
 
 ![](./preview/preview-project.gif)
 
-# Hello, I'm excited to introduce you to one of my projects!
+Hello, I'm excited to introduce you to one of my projects!
 
 This is a simple project that uses HTML, CSS, and JavaScript to create a landing page for a chatbot.
 
