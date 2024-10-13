@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+@font-face {
+  font-family: "Telegraf";
+  src: url("../assets/font/PPTelegraf-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Telegraf Bold";
+  src: url("../assets/font/PPTelegraf-UltraBold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Garet Bold";
+  src: url("../assets/font/Garet-Book.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --website-background: #211d1d;
+  --yellow-1: #e5e900;
+}
+header {
+  padding: 16px;
+}
+.social-icons-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  align-self: end;
+  padding: 2px 120px 2px 0px;
+}
+.header-products {
+  background-color: var(--website-background);
+  padding: 50px;
+}
+.social-icons-container i {
+  font-size: 32px;
+  color: var(--yellow-1);
+}
+.robot-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.marketing {
+  padding: 20px 16px 20px 16px;
+  background-color: var(--yellow-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.product-container img {
+  width: 170px;
+}
+.products-container {
+  background-color: var(--yellow-1);
+}
+.product-description,
+strong {
+  color: #000;
+  font-family: "Telegraf";
+  font-size: 24px;
+}
+
+.products {
+  height: 60vh;
+  text-align: center;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.products-header-title {
+  font-size: 36px;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+h3 {
+  color: #000;
+  font-family: "Telegraf", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  font-size: 22px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.card img {
+  width: 140px;
+}
+h2 {
+  font-family: "Telegraf Bold", Cambria, Cochin, Georgia, Times,
+    "Times New Roman", serif;
+  font-size: 140px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.sub-title {
+  font-family: "Telegraf Bold", Cambria, Cochin, Georgia, Times,
+    "Times New Roman", serif;
+  font-size: 18px;
+  text-align: justify;
+}
+ul a {
+  font-size: 16px;
+}
+a {
+  font-family: "Garet Bold";
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  transition: 0.3ms all ease-in;
+  color: var(--yellow-1);
+}
+.bi:hover {
+  transition: 0.3ms all ease-in;
+  color: white;
+}
+#header-container {
+  display: flex;
+  justify-content: space-between;
+}
+#logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+h1 {
+  font-family: "Telegraf Bold", Cambria, Cochin, Georgia, Times,
+    "Times New Roman", serif;
+  font-size: 16px;
+}
+#header-container {
+  display: flex;
+}
+#robot-img {
+  width: 100%;
+  max-width: 700px;
+}
+
+#logo-icon {
+  padding: 1px;
+  width: 60px;
+}
+.main-page {
+  margin-top: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#contact-us {
+  font-size: 32px;
+  padding: 6px 8px;
+  background-color: #000;
+  font-family: "Garet Bold";
+  border: 2px solid var(--yellow-1);
+  align-self: self-end;
+}
+#contact-us:hover {
+  transition: 0.3ms ease-in all;
+  border-color: white;
+}
+
+body {
+  background-color: var(--website-background);
+}
+
+.grid-container {
+  height: 70vh;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Define 2 colunas de tamanho igual */
+}
+
+.grid-item {
+  background-color: #f0f0f0; /* Cor de fundo opcional */
+  padding: 20px; /* Adiciona preenchimento opcional */
+}
+
+footer {
+  display: flex;
+  justify-content: right;
+  padding: 16px;
+  align-items: end;
+  font-size: 24px;
+  font-family: "Telegraf", "Courier New", Courier, monospace;
+  height: 120px;
+  background-color: var(--website-background);
+}
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .sub-title {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 16px;
+  }
+
+  ul {
+    gap: 10px;
+    margin-right: 0;
+  }
+
+  ul a {
+    font-size: 18px;
+  }
+
+  #header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-container {
+    display: block;
+    padding: 16px;
+  }
+
+  .main-page {
+    margin-top: 20px;
+    gap: 16px;
+  }
+
+  .robot-container {
+    margin-top: 16px;
+    padding: 0 16px;
+  }
+
+  .social-icons-container {
+    justify-content: center;
+    padding: 8px 0;
+  }
+
+  #logo-icon {
+    width: 40px;
+  }
+
+  #contact-us {
+    font-size: 24px;
+    padding: 8px 12px;
+    margin: 16px 0;
+  }
+
+  .products {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+  }
+
+  .product-container {
+    gap: 8px;
+    text-align: center;
+  }
+
+  .product-container img {
+    width: 120px;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer {
+    justify-content: center;
+    font-size: 18px;
+  }
+}
+
+/* Estilos para telas médias (entre 768px e 1024px) */
+@media (min-width: 576px) and (max-width: 1024px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .sub-title {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 12px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .social-icons-container {
+    justify-content: center;
+    padding: 8px;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-container img {
+    width: 140px;
+  }
+
+  .product-container {
+    padding: 16px;
+    margin: 16px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #contact-us {
+    font-size: 24px;
+    padding: 4px 6px;
+    margin: 16px 0;
+    width: 80%;
+    align-self: center;
+  }
+
+  header {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul {
+    gap: 10px;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  ul a {
+    font-size: 18px;
+  }
+
+  #logo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logo-icon {
+    width: 50px;
+  }
+
+  .marketing {
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card img {
+    width: 120px;
+  }
+
+  footer {
+    justify-content: center;
+    font-size: 20px;
+    padding: 16px;
+  }
+
+  .main-page {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .grid-item {
+    padding: 20px;
+    margin: 16px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .products {
+    height: auto;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  ul {
+    gap: 60px;
+    margin-right: 120px;
+  }
+  ul a {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Diama Bot</title>
+  </head>
+  <body>
+    <header id="header-container">
+      <div id="logo-container">
+        <img
+          src="./assets/img/logo-icon-1.png"
+          id="logo-icon"
+          alt="Logo Diama Bot"
+        />
+        <h1>Diama Bot</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#header-container" title="Voltar ao início da página"
+              >Início</a
+            >
+          </li>
+          <li>
+            <a href="#product" title="Ir para a seção de produtos">Produtos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="grid-container">
+        <section class="main-page">
+          <h2>Desenvolva Seu Negócio</h2>
+          <p class="sub-title">
+            A tecnologia não precisa ser complicada. Na DiamaBot, desenvolvemos
+            chatbots inteligentes para que a inovação esteja a serviço de você,
+            do seu negócio e da sua equipe.
+          </p>
+          <button id="contact-us" disabled>Fale Conosco</button>
+        </section>
+        <section class="robot-container">
+          <div
+            id="lottie-container"
+            aria-label="Animação do chatbot"
+            role="img"
+          ></div>
+          <div
+            class="social-icons-container"
+            aria-label="Links das redes sociais"
+          >
+            <a
+              class="link-social"
+              href="https://wa.me/..."
+              title="Link para WhatsApp"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+            <a href="https://facebook.com/..." title="Link para Facebook"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="https://instagram.com/..." title="Link para Instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="https://twitter.com/..." title="Link para Twitter"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+          </div>
+        </section>
+      </div>
+      <section class="marketing">
+        <div class="card">
+          <img
+            class="card-img"
+            src="./assets/img/marketing-img-2.png"
+            alt="Imagem promocional de captação de clientes"
+          />
+          <h3>Até 2x mais captação de cliente.</h3>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="./assets/img/marketing-img-1.png"
+            alt="Imagem promocional de clientes ativos"
+          />
+          <h3>Mais de 5 Mil Clientes Ativos.</h3>
+        </div>
+      </section>
+
+      <section class="products-container" id="product">
+        <header class="header-products">
+          <h3 class="products-header-title">Conheça nossa linha de produtos</h3>
+        </header>
+        <div class="products">
+          <div id="product-basic">
+            <div class="product-container">
+              <img
+                src="./assets/img/basic.png"
+                alt="Imagem do Chatbot Básico"
+              />
+              <h3>Chatbot Básico</h3>
+              <h3>Atendimento Automático</h3>
+              <p class="product-description">
+                <strong>Funcionalidades:</strong> Respostas automáticas,
+                personalização básica, integração com WhatsApp e Messenger.
+              </p>
+              <p class="product-description">
+                <strong>Valor:</strong> R$ 199/mês
+              </p>
+            </div>
+          </div>
+          <div id="product-basic">
+            <div class="product-container">
+              <img
+                src="./assets/img/intermediate.png"
+                alt="Imagem do Chatbot Intermediário"
+              />
+              <h3>Chatbot Intermediário</h3>
+              <h3>Assistente de Vendas</h3>
+              <p class="product-description">
+                <strong>Funcionalidades:</strong> Recomendações de produtos,
+                integração com sistemas de pagamento, relatórios de vendas,
+                personalização avançada.
+              </p>
+              <p class="product-description">
+                <strong>Valor:</strong> R$ 499/mês
+              </p>
+            </div>
+          </div>
+          <div id="product-basic">
+            <div class="product-container">
+              <img
+                src="./assets/img/advanced.png"
+                alt="Imagem do Chatbot Avançado"
+              />
+              <h3>Chatbot Avançado</h3>
+              <h3>Personalizado</h3>
+              <p class="product-description">
+                <strong>Funcionalidades:</strong> Resolução automática de
+                problemas, integração com CRM, suporte multilíngue, automação de
+                processos complexos.
+              </p>
+              <p class="product-description">
+                <strong>Valor:</strong> R$ 999/mês
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        Desenvolvido por @lucasfhs -
+        <cite>Este conteúdo não será publicado.</cite>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.1/lottie.min.js"></script>
+    <script>
+      var animation = lottie.loadAnimation({
+        container: document.getElementById("lottie-container"), // elemento onde será exibida a animação
+        renderer: "svg", // formato de renderização
+        loop: true, // define se a animação deve fazer loop
+        autoplay: true, // define se a animação começa automaticamente
+        path: "./assets/lottie/Animation.json", // caminho para o arquivo JSON da animação Lottie
+      });
+    </script>
+  </body>
+</html>
