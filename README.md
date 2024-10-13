@@ -1,4 +1,4 @@
-# pokemon-sprites-search
+# landing-page-chat-bot
 
 ![](./preview/preview-project.gif)
 
